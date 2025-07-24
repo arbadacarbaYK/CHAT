@@ -200,7 +200,7 @@ function App() {
       </div>
 
       {/* Avatar Section */}
-      <div className="w-1/3 h-screen flex flex-col p-8">
+      <div className="w-1/2 h-screen flex flex-col p-8">
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 w-full h-full flex flex-col">
           <div className="flex-1 flex items-center justify-center h-full max-h-[80vh]">
             <AvatarDisplay glbUrl={avatars[selectedAvatarIdx].glbUrl} cameraOrbit="0deg 90deg 5.5m" fieldOfView="12deg" headOnly={false} reactTrigger={reactTrigger} mainPage={true} />
@@ -218,7 +218,7 @@ function App() {
       </div>
 
       {/* Chat Section */}
-      <div className="w-2/3 h-screen flex flex-col p-8">
+      <div className="w-1/2 h-screen flex flex-col p-8">
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 w-full h-full flex flex-col">
           <ChatUI skillLevel={skillLevel} onReact={() => setReactTrigger((prev) => prev + 1)} />
         </div>
